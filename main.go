@@ -17,7 +17,7 @@ func main() {
 
 	for _, value := range ducksArr {
 		value.PerformFly()
-		//	value.Swim()
+		value.Swim()
 		//	value.PerformQuack()
 		value.Display()
 	}
