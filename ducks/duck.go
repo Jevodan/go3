@@ -1,9 +1,13 @@
 package ducks
 
-import "fmt"
+import (
+	"ducks2/fly"
+	"fmt"
+)
 
 type Duck struct {
-	name string
+	name        string
+	flyBehavior fly.FlyBehavior
 }
 
 func (d *Duck) Display() {
@@ -12,4 +16,8 @@ func (d *Duck) Display() {
 
 func (d *Duck) GetName() string {
 	return d.name
+}
+
+func (d *Duck) PerformFly() {
+	d.flyBehavior.Fly(d.name)
 }

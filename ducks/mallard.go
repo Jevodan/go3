@@ -1,6 +1,7 @@
 package ducks
 
 import (
+	"ducks2/fly"
 	"fmt"
 )
 
@@ -12,7 +13,7 @@ type mallardDuck struct {
 
 func NewMallardDuck() mallardDuck {
 	mallard.name = "Утка мандаринка"
-	//	mallard.flyBehavior = &FlyWithWings{}
+	mallard.flyBehavior = &fly.FlyWithWings{}
 	//	mallard.quackBehavior = &Squeak{}
 	return mallard
 }

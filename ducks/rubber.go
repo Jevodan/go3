@@ -1,6 +1,9 @@
 package ducks
 
-import "fmt"
+import (
+	"ducks2/fly"
+	"fmt"
+)
 
 var rubber = rubberDuck{}
 
@@ -10,6 +13,7 @@ type rubberDuck struct {
 
 func NewRubberDuck() *rubberDuck {
 	rubber.name = "Утка манок"
+	rubber.flyBehavior = &fly.NoFly{}
 	return &rubber
 }
 

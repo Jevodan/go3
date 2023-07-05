@@ -16,7 +16,7 @@ func main() {
 	ducksArr = append(ducksArr, red.Duck, mallard.Duck, rubber.Duck)
 
 	for _, value := range ducksArr {
-		//	value.PerformFly()
+		value.PerformFly()
 		//	value.Swim()
 		//	value.PerformQuack()
 		value.Display()

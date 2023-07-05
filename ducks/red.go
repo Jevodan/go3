@@ -1,6 +1,9 @@
 package ducks
 
-import "fmt"
+import (
+	"ducks2/fly"
+	"fmt"
+)
 
 var red = redDuck{}
 
@@ -14,7 +17,7 @@ func (r *redDuck) Display() {
 
 func NewRedDuck() *redDuck {
 	red.name = "Красная утка"
-	//	mallard.flyBehavior = &FlyWithWings{}
+	red.flyBehavior = &fly.FlyWithWings{}
 	//	mallard.quackBehavior = &Squeak{}
 	return &red
 }
